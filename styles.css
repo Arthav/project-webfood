@@ -1,3 +1,7 @@
+html {
+    --color-orange-100: rgb(246, 116, 68)
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -5,7 +9,7 @@ body {
 }
 
 a {
-    color: coral;
+    color: var(--color-orange-100);
     text-decoration: none;
 }
 
@@ -21,7 +25,7 @@ a {
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: coral;
+    color:  var(--color-orange-100);
     text-transform: uppercase;
 }
 
@@ -48,7 +52,7 @@ a {
 }
 
 #main-header nav a {
-    color: coral;
+    color:  var(--color-orange-100);
     font-size: 1.25rem;
 }
 
@@ -102,7 +106,7 @@ a {
 
 main h1 {
     text-align: center;
-    color: coral;
+    color:  var(--color-orange-100);
     font-size: 3rem ;
 }
 
@@ -142,14 +146,18 @@ main h1 {
 }
 
 .btn {
+    display: block;
+    width: 8rem;
     background-color: rgb(228, 157, 44);
     color: white;
     border-radius: 4px;
     padding: 0.5rem 1.5rem;
+    margin: auto;
 }
 
 .btn:hover {
     background-color: rgb(221, 134, 34);
+    transform: scale(1.05);
 }
 
 @media (max-width: 48rem) {
